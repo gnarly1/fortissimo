@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+	    {% load staticfiles %} 
+		<title></title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+	<h1> List of posts </h1>
+	<div class="postlist">
+	  {% for p in posts %}
+	    <div class="post"> 
+	    <h2><a href="{% url 'post:completepost' slug=p.slug %}" > {{ p.title }}</a></h2>
+	    <p> {{ p.snippet }} </p>
+	    <p> {{ p.date }}</p>
+	    </div> 
+	  {% endfor %}
+	  </div>
+	  </body>
+	  </html>

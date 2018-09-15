@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+	    {% load staticfiles %} 
+		<link rel="stylesheet" type="text/css" href={% static 'firstpage/styles.css'%}>
+		<title>FORTISSIMO:Discover New Music</title>
+		<meta charset="UTF-8">
+	</head>
+<body style="background-image:url('{%static 'firstpage/Graph.jpg'%}')">
+	<a target="_blank" title="Check out what this means" href="https://www.google.com/search?client=firefox-b-ab&ei=EvBnW-bhN8vuvASs646wCw&q=fortissimo&oq=fortissimo&gs_l=psy-ab.3..35i39k1j0l9.7489.8044.0.8514.3.3.0.0.0.0.408.639.2-1j0j1.2.0....0...1c.1.64.psy-ab..1.2.634....0.2SuGnaAZ8Vs">
+				<img src="{% static "firstpage/Logo1.jpg" %}" style="float:left;width:150px;height:120px;"alt="ff symbol">
+	</a>
+    <h1>
+			FORTISSIMO: DISCOVER NEW MUSIC<br>
+	</h1>
+	<p title="Introduction" style="font-size:15px;" id="Main">
+		<b>Our Project is called<abbr title="Music Portal Stream Data Analysis"> MPSDA</abbr></b>
+	</p>
+	<br><br>
+	<hr>
+	<div class="btn-group">
+	    
+        <a id="mybutton1" href= "{% url 'accounts:login' %}" title="click here to login">
+        <button>Sign In</button>
+        </a>
+        
+        
+        <a id="mybutton2" href= "{% url 'accounts:signup' %}" title="click here to sign up">
+        <button>Create Account</button>
+        </a>
+        
+		<form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
+		{%csrf_token%}
+		<input type="submit" value="Logout">
+		</form>
+		<button>Stream Data Analysis</button>
+		<div class="dropdown">
+			<button class="dropbtn">Music Portal</button>
+				<div class="dropdown-content">
+					<a href="{% url 'post:genre' genre='Rock' %}">Rock</a>
+					<a href="{% url 'post:genre' genre='Indie' %}">Indie</a>
+					<a href="{% url 'post:genre' genre='Metal' %}">Metal</a>
+					<a href="{% url 'post:genre' genre='Other' %}">Other</a>
+				</div>
+		</div>
+	</div>
+	
+	
+	<h4>EXPLORE</h4>
+	<ol>
+		<br>
+		<li style="text-align:left;" id="E1">Stream Data Analysis</li>
+			<!--<img src="Graph.jpg" style="width:1000px;height:600px;"alt="Music Pulsation"><!-->
+			<div class="background">
+				<div class="transbox">
+					<p>
+						<br>Discover trends in music across the world visualised with graphs and plots as per your requirement.
+						<br>Find the most trending artist across different countries and time periods.
+						<br><br><br><br>
+					</p>
+				</div>
+			</div>
+		<li style="text-align:left;" id="E2">The Music Portal</li>
+		    <!--<img src="WriteMixTape.jpg" style="width:1000px;height:600px;"alt="Music sheet ECG"><!-->
+			<p>
+			    <br>Share your thoughts about new music,artists and albums with people across the globe.
+			   <br>Upvote other posts.<br>Join our sub communities for the genres of your choice.
+			   <br><br><br><br>
+			</p>
+	</ol>
+	<a target="_blank" href="https://www.spotify.com/int/why-not-available/">This is where we got our Dataset for stream analysis</a>
+	<a target="_blank" href="https://genius.com/"><br><br/>Also, check this out for Lyrical analysis<br><br/></a>
+	<hr>
+	<address>
+	Written by SMCCK<br>Visit me at:<br>Hell 600-049
+	</address>
+</body>
+</html>

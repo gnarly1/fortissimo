@@ -1,0 +1,167 @@
+
+			h1   {color: Black;
+				  text-align:left;
+				  border:2px solidDodgerBlue;
+				  font-family: "Comicsans", Times, Sans-serif;
+				  text-shadow: 3px 2px SkyBlue;
+				 }
+
+.btn-group button,input {
+    background-color: #111111; /* Green background */
+    border: none; /* Green border */
+    color: white; /* White text */
+    padding: 20px 20px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: center-right; /* Float the buttons side by side */
+	opacity:0.6;
+}
+
+
+form {
+    display: inline;
+}
+
+
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #333333;
+}
+.dropbtn {
+    background-color: #111111;
+    color: #333333;
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+	
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111111;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	opacity:0.9;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #333333}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #333333;
+}
+
+			/*div.transbox 
+				{
+					margin: 5px;
+					background-color: #ffffff;
+					border: 1px solid black;
+					opacity: 0.2;
+					filter: alpha(opacity=60); 
+				}
+
+			div.transbox p {
+					margin: 0.5%;
+					font-weight: bold;
+					color: #000000;
+							}*/
+			#Main{
+				
+			color: Black;
+				  text-align:left;
+				  font-family: "Comicsans", Times, Sans-serif;
+				  text-shadow: 3px 2px Silver;
+				 }
+			
+			p    {
+				font-size:20px;
+				color: SkyBlue;
+				  text-align:left;
+				  
+				  }
+			ol   {color: White;
+				   margin:50px;}
+			a:link {
+					color: White;
+					text-decoration: none;
+					}
+
+		    a:visited {
+					color: White;
+					text-decoration: none;
+				  }
+
+            a:hover {
+                    color: SkyBlue;
+                    text-decoration: underline;
+                }
+
+            a:active {
+                   color: yellow;
+                   text-decoration: underline;
+                }
+				
+		h4   {   
+				color:white;
+				text-align:left;
+		}
+			 
+		address {color:White;
+				text-align:center;}
+		
+		ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+    background-color: #111111;
+	opacity:0.6;
+}
+
+li {
+    float: left;
+	
+}
+
+
+li a {
+	display: block;
+    color:Blue;
+	font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #333333;
+}

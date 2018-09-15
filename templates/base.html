@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		{% load staticfiles %} 
+		
+		<!--<link rel="stylesheet" type="text/css" href={% static 'firstpage/styles.css'%}>-->
+            
+		<title></title>
+		<meta charset="UTF-8">
+	</head>
+<body style="background-image:url('{%static 'music.jpeg'%}')">
+
+ 
+	<div>
+	{% block content %}
+	{% endblock %}
+</div>
+</body>

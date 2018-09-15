@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+	    {% load staticfiles %} 
+		<title></title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+	    <div class="postlistforslug">
+	    {% for p in post %}
+	    <div class="post"> 
+	    <h2>{{ p.title }}</h2>
+	    <p> {{ p.body }} </p>
+	    <p> {{ p.date }}</p>
+	   </div> 
+	   {% endfor %}
+	  
+	  </body>
+	  </html>
